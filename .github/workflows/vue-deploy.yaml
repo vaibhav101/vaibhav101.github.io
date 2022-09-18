@@ -4,6 +4,7 @@ on:
     branches:
       - master
 jobs:
+  # TODO: Proboably should swap the order of these steps and fail the release tag if deploy fails
   release-on-push:
     runs-on: ubuntu-latest
     name: Tag Release
