@@ -7,3 +7,8 @@
   background: black;
 }
 </style>
+<script lang="ts">
+export default {
+  name: "NotificationHeader",
+};
+</script>

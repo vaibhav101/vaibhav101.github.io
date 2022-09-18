@@ -3,7 +3,7 @@
     I did not get time to finish the website and got sleepy but atleast something works!
   </div>
 </template>
-<script>
+<script lang="ts">
 export default {
   name: "BodyText",
 };

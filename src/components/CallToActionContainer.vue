@@ -3,7 +3,7 @@
     <button type="submit" name="Vote">Vote</button>
   </div>
 </template>
-<script>
+<script lang="ts">
 export default {
   name: "CallToActionContainer",
 };
@@ -17,6 +17,6 @@ export default {
   height: 2rem;
   width: 50%;
   background: #2c3e50;
-  font-size: ;
+  font-size: 3rem;
 }
 </style>

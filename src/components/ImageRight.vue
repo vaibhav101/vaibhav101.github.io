@@ -3,7 +3,7 @@
     <img src="https://via.placeholder.com/760x680">
   </div>
 </template>
-<script>
+<script lang="ts">
 export default {
   name: "ImageRight",
 };
