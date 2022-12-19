@@ -66,7 +66,7 @@ const mq = useMq();
 
 .scroll-wrapper {
   width: 100%;
-  flex-grow: 1;
+  flex-grow: 2;
   scroll-snap-type: y mandatory;
   overflow: scroll;
 }

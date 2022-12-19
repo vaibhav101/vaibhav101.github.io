@@ -6,7 +6,7 @@ import AboutContent from "./components/about/AboutContent.vue";
 import { ref, computed } from "vue";
 
 // Minimal Routing Setup
-const routes = {
+const routes: any = {
   "/": HomeContentVue,
   "/about": AboutContent,
 };
@@ -18,9 +18,12 @@ window.addEventListener("hashchange", () => {
 });
 
 const currentView = computed(() => {
-  return routes["/"] || NotFound;
+  routes
+  return routes[currentPath.value.slice(1) || "/"] || NotFound;
 });
+
 </script>
+
 
 <template>
   <div class="website-wrapper">
