@@ -49,20 +49,14 @@
   </nav>
 </template>
 
-<script lang="ts">
-export default {
-  name: "NavigationBar",
-  data() {
-    return {
-      isNavbarActive: false,
-    };
-  },
-  methods: {
-    toggleNavbar() {
-      this.isNavbarActive = !this.isNavbarActive;
-    },
-  },
-};
+<script setup lang="ts">
+import { ref } from 'vue';
+
+let isNavbarActive = ref(false);
+
+function toggleNavbar() {
+  isNavbarActive.value = !isNavbarActive.value;
+}
 </script>
 
 <style scoped>
