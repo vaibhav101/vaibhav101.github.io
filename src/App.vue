@@ -18,16 +18,21 @@ window.addEventListener("hashchange", () => {
 });
 
 const currentView = computed(() => {
-  // @ts-ignore
-  return routes[currentPath.value.slice(1) || "/"] || NotFound;
+  return routes["/"] || NotFound;
 });
-
-
 </script>
 
 <template>
-  <NavigationBar />
-  <component :is="currentView" />
+  <div class="website-wrapper">
+    <NavigationBar />
+    <component :is="currentView" />
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+div.website-wrapper {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+</style>
