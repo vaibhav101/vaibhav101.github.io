@@ -11,7 +11,9 @@
     "github-deploy": "node deploy/scripts/github-pages-deploy.ts"
   },
   "dependencies": {
-    "vue": "^3.2.38"
+    "bulma": "^0.9.4",
+    "vue": "^3.2.38",
+    "vue3-mq": "^3.1.3"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",
